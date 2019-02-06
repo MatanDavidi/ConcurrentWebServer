@@ -15,7 +15,6 @@ public class ClientRequestManager {
     private BufferedWriter out;
 
     /**
-     *
      * @param out
      */
     public ClientRequestManager(OutputStream out) {

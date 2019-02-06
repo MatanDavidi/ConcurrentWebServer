@@ -30,9 +30,9 @@ public class ClientRequestManager {
 
     }
 
-    public void printIndex() throws IOException {
+    public void returnIndex() throws IOException {
 
-//        printHttpHeader();
+//        returnHttpHeader();
 //
 //        out.write("<head>");
 //        out.write("<title>IT WORKS!</title>");

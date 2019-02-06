@@ -75,15 +75,13 @@ public class ConcurrentWebServer extends Thread {
                         //If the requested resource is empty, change it to index.html
                         if (requestPath.toString().equalsIgnoreCase("")) {
 
-                            pages.printHelloWorld();
-
-                        } else {
-
-                            pages.printHtmlFile(Paths.get(htdocsFolder.toString(), requestPath.toString()));
+                            requestPath = Paths.get("index.html");
 
                         }
 
                         //Print requested html page
+                        pages.returnFile(Paths.get(htdocsFolder.toString(), requestPath.toString()));
+
                         //If the resource was not found
                     } catch (FileNotFoundException fnfe) {
 

@@ -30,11 +30,11 @@ public class ConcurrentServerManager {
                 //Accept a connection from the client
                 Socket client = server.accept();
                 System.out.println("Connection accepted from " + client.getRemoteSocketAddress());
-                (new ConcurrentWebServer(client, Paths.get("C:", "www"))).start();
 
-            }
                 //Specify a hard-coded folder where the server is going to look for html files
+                Path www = Paths.get("D:", "www");
                 //Create a server thread
+                (new ConcurrentWebServer(client, www)).start();
 
             }
         //If there's a problem with the server's creation

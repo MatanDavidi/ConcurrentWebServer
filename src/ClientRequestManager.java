@@ -5,22 +5,26 @@ import java.nio.file.Paths;
 import java.util.List;
 
 /**
- * The WebPagesManager class contains useful methods to write HTML pages to an output stream
+ * The ClientRequestManager class contains useful methods to write resources to an output stream
  */
-public class WebPagesManager {
+public class ClientRequestManager {
 
     /**
-     *
+     * The writer to use to write to the output stream
      */
     private BufferedWriter out;
 
-    public WebPagesManager(InputStream in, OutputStream out) {
+    /**
+     *
+     * @param out
+     */
+    public ClientRequestManager(OutputStream out) {
 
-        this.out = new BufferedWriter(new OutputStreamWriter(out));
+        this(new BufferedWriter(new OutputStreamWriter(out)));
 
     }
 
-    public WebPagesManager(BufferedReader in, BufferedWriter out) {
+    public ClientRequestManager(BufferedWriter out) {
 
         this.out = out;
 

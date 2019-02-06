@@ -61,12 +61,14 @@ public class ConcurrentWebServer extends Thread {
                 //Read the client's request
                 String request = in.readLine();
 
-                if (request != null && request.length() > 0) {
+                System.out.println(request);
 
-                    WebPages pages = new WebPages(in, out);
                 //Create a new object of type ClientRequestManager
+                ClientRequestManager pages = new ClientRequestManager(out);
 
                 //If the request exists, meaning that the client actually sent something and is valid
+                if (request != null && request.length() > 0 && request.startsWith("GET") && request.endsWith("HTTP/1.1")) {
+
                     //Reads the resource the client is looking for (if any)
                     Path requestPath = Paths.get(getRequestFile(request.trim()));
 

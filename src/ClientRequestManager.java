@@ -68,7 +68,7 @@ public class ClientRequestManager {
 
     }
 
-    public void printHtmlFile(Path url) throws IOException {
+    public void returnFile(Path url) throws IOException {
 
         if (Files.exists(url) && !Files.notExists(url)) {
 

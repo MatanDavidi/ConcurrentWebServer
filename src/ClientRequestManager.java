@@ -40,7 +40,7 @@ public class ClientRequestManager {
 //        out.write("<body>");
 //        out.write("<h1>IT WORKS!</h1>");
 //        out.write("</body>");
-        printHtmlFile(Paths.get("pages", "index.html"));
+        returnFile(Paths.get("pages", "index.html"));
 
     }
 
@@ -56,7 +56,7 @@ public class ClientRequestManager {
 //        out.write("<h1>Error 404 - File not found</h1>");
 //        out.write("<p>Resource <code>" + file + "</code> could not be found</p>");
 //        out.write("</body>");
-        printHtmlFile(Paths.get("pages", "errors", "4xx", "404.html"));
+        returnFile(Paths.get("pages", "errors", "4xx", "404.html"));
 
     }
 

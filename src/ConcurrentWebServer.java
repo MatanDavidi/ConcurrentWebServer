@@ -98,6 +98,7 @@ public class ConcurrentWebServer extends Thread {
                 //Close connection resources
                 out.close();
                 in.close();
+                client.close();
 
             } catch (IOException ioe) {
 

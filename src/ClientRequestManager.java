@@ -60,7 +60,7 @@ public class ClientRequestManager {
 
     }
 
-    private void printHttpHeader() throws IOException {
+    private void returnHttpHeader() throws IOException {
 
         out.write("HTTP/1.1 200 OK\r\n");
         out.write("\r\n");

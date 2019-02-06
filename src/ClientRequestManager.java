@@ -44,7 +44,7 @@ public class ClientRequestManager {
 
     }
 
-    public void print404ErrorPage(/*String file*/) throws IOException {
+    public void return404ErrorPage(/*String file*/) throws IOException {
 
         //HTTP Header
 //        out.write("HTTP/1.1 404 Not Found\r\n");

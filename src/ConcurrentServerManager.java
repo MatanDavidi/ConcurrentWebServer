@@ -1,8 +1,6 @@
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 
 /**
  * The ConcurrentServerManager class manages simultaneous clients connecting to the server by creating a unique thread
@@ -31,10 +29,8 @@ public class ConcurrentServerManager {
                 Socket client = server.accept();
                 System.out.println("Connection accepted from " + client.getRemoteSocketAddress());
 
-                //Specify a hard-coded folder where the server is going to look for html files
-                Path www = Paths.get("D:", "www");
                 //Create a server thread
-                (new ConcurrentWebServer(client, www)).start();
+                (new ConcurrentWebServer(client)).start();
 
             }
             //If there's a problem with the server's creation

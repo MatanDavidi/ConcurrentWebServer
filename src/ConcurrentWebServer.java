@@ -26,7 +26,7 @@ public class ConcurrentWebServer extends Thread {
      */
     public ConcurrentWebServer(Socket client) {
 
-        this(client, Paths.get("C:", "www"));
+        this(client, Paths.get("pages"));
 
     }
 

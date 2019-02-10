@@ -95,7 +95,7 @@ public class ConcurrentWebServer extends Thread {
                 } else {
 
                     //If the request wasn't validated print a Bad Request page
-                    pages.returnFile(Paths.get("pages", "errors", "4xx", "400.html"));
+                    pages.return400ErrorPage();
 
                 }
 

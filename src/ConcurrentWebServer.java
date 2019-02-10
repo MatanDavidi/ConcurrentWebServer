@@ -63,8 +63,8 @@ public class ConcurrentWebServer extends Thread {
 
                 System.out.println(request);
 
-                //Create a new object of type ClientRequestManager
-                ClientRequestManager pages = new ClientRequestManager(out);
+                //Create a new object of type ClientResponseManager
+                ClientResponseManager pages = new ClientResponseManager(client.getOutputStream());
 
                 //If the request exists, meaning that the client actually sent something and is valid
                 if (request != null && request.length() > 0 && request.startsWith("GET") && request.endsWith("HTTP/1.1")) {

@@ -1,11 +1,13 @@
+
 import java.io.*;
 import java.net.Socket;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
 /**
- * The ConcurrentWebServer class is a subclass of Thread and it manages requests coming from a client offering to
- * display a certain html page based on the request as the response
+ * The ConcurrentWebServer class is a subclass of Thread and it manages requests
+ * coming from a client offering to display a certain html page based on the
+ * request as the response
  */
 public class ConcurrentWebServer extends Thread {
 
@@ -20,7 +22,8 @@ public class ConcurrentWebServer extends Thread {
     private Path htdocsFolder;
 
     /**
-     * Instantiates new objects of type ConcurrentWebServer with a default value for the field htdocsFolder
+     * Instantiates new objects of type ConcurrentWebServer with a default value
+     * for the field htdocsFolder
      *
      * @param client the client that is connected to this server
      */
@@ -31,11 +34,12 @@ public class ConcurrentWebServer extends Thread {
     }
 
     /**
-     * Instantiates new objects of type ConcurrentWebServer allowing to specify a value for the fields client and
-     * htdocsFolder
+     * Instantiates new objects of type ConcurrentWebServer allowing to specify
+     * a value for the fields client and htdocsFolder
      *
-     * @param client       the client that is connected to this server
-     * @param htdocsFolder the folder in which the server has to look for html files to offer
+     * @param client the client that is connected to this server
+     * @param htdocsFolder the folder in which the server has to look for html
+     * files to offer
      */
     public ConcurrentWebServer(Socket client, Path htdocsFolder) {
 
@@ -118,7 +122,8 @@ public class ConcurrentWebServer extends Thread {
     /**
      * Gets the requested resource from a request string
      *
-     * @param request the string from which to extrapolate the requested resource
+     * @param request the string from which to extrapolate the requested
+     * resource
      * @return a String containing the name of the requested resource
      */
     public String getRequestFile(String request) {

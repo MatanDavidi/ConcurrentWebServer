@@ -1,10 +1,11 @@
+
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
 /**
- * The ConcurrentServerManager class manages simultaneous clients connecting to the server by creating a unique thread
- * for each client
+ * The ConcurrentServerManager class manages simultaneous clients connecting to
+ * the server by creating a unique thread for each client
  */
 public class ConcurrentServerManager {
 

@@ -2,10 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e79b94d2-5cb3-451e-a00b-7476d7869420" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClientRequestManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClientResponseManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConcurrentServerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConcurrentServerManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConcurrentWebServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConcurrentWebServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConcurrentWebServer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/errors/4xx/400.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/errors/4xx/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/gnr.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/img/fortress.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/img/waterfall.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/interactivepaintingstring/interactivepaintingstring.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/interactivepaintingstring/ipsscript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/interactivepaintingstring/ipsstyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/screensaver/img/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/screensaver/img/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/screensaver/img/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/screensaver/img/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/screensaver/img/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/screensaver/img/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/screensaver/img/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/screensaver/img/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/screensaver/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/screensaver/screensaver.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/screensaver/ssscript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/screensaver/ssstyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/ClientResponseManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/ConcurrentServerManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/ConcurrentWebServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NetBeans/ConcurrentWebServer/src/ConcurrentWebServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../NetBeans/ConcurrentWebServer/src/ConcurrentWebServer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +43,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ConcurrentServerManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-185">
-              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+            <state relative-caret-position="646">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -31,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ConcurrentWebServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-265">
-              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+            <state relative-caret-position="539">
+              <caret line="78" selection-start-line="78" selection-end-line="78" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ClientResponseManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1134">
-              <caret line="113" column="19" selection-start-line="113" selection-start-column="19" selection-end-line="113" selection-end-column="19" />
+            <state relative-caret-position="170">
+              <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,7 +104,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -103,17 +130,37 @@
     <option name="width" value="1750" />
     <option name="height" value="980" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="ConcurrentWebServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConcurrentWebServer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ConcurrentWebServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConcurrentWebServer" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ConcurrentWebServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConcurrentWebServer" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ConcurrentWebServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConcurrentWebServer" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
               <item name="ConcurrentWebServer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -130,13 +177,16 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549559843088" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549835029133" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -180,6 +230,8 @@
       <option name="presentableId" value="Default" />
       <updated>1548935457677</updated>
       <workItem from="1549285123376" duration="52000" />
+      <workItem from="1549834766603" duration="48000" />
+      <workItem from="1549834890879" duration="230000" />
     </task>
     <task id="LOCAL-00001" summary="Created new IntelliJ project &quot;ConcurrentWebServer&quot;">
       <created>1548935595060</created>
@@ -206,12 +258,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52000" />
+    <option name="totallyTimeSpent" value="330000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28255033" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2889126" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -220,8 +272,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32719547" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3937677" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32719395" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39328277" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -251,6 +303,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
     <MESSAGE value="Created new IntelliJ project &quot;ConcurrentWebServer&quot;" />
     <MESSAGE value="Added JetBrains specific files and directories to .gitignore" />
     <MESSAGE value="Files generated automatically by IntelliJ" />
@@ -259,6 +314,16 @@
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ConcurrentServerManager.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="Files.exists((Paths.get(htdocsFolder.toString(), requestPath.toString())))" language="JAVA" custom="java.nio.file.Files" />
@@ -467,65 +532,15 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_192/src.zip!/java/io/OutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="150" column="16" selection-start-line="150" selection-start-column="16" selection-end-line="150" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_192/src.zip!/java/io/BufferedWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_192/src.zip!/java/io/OutputStream.java" />
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_192/src.zip!/java/io/BufferedWriter.java" />
     <entry file="file://$PROJECT_DIR$/out/production/ConcurrentWebServer/index.html" />
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_192/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="745" column="16" selection-start-line="745" selection-start-column="16" selection-end-line="745" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="89" column="32" selection-start-line="89" selection-start-column="32" selection-end-line="89" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_192/src.zip!/java/io/FileNotFoundException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="43" column="13" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_192/src.zip!/java/nio/file/Paths.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="83" column="56" lean-forward="true" selection-start-line="83" selection-start-column="56" selection-end-line="83" selection-end-column="56" />
-          <folding>
-            <element signature="e#2673#2674#0" expanded="true" />
-            <element signature="e#2741#2742#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_192/src.zip!/java/lang/Thread.java" />
+    <entry file="file://$PROJECT_DIR$/.gitignore" />
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_192/src.zip!/java/io/FileNotFoundException.java" />
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_192/src.zip!/java/nio/file/Paths.java" />
     <entry file="file://$PROJECT_DIR$/pages/index.html" />
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_192/src.zip!/java/io/BufferedReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1073">
-          <caret line="369" column="55" selection-start-line="369" selection-start-column="16" selection-end-line="369" selection-end-column="55" />
-          <folding>
-            <element signature="e#3011#3012#0" expanded="true" />
-            <element signature="e#3058#3059#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_192/src.zip!/java/io/BufferedReader.java" />
     <entry file="file://$PROJECT_DIR$/pages/errors/4xx/404.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -540,10 +555,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ConcurrentServerManager.java">
+    <entry file="file://$PROJECT_DIR$/src/ClientResponseManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-185">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        <state relative-caret-position="170">
+          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -552,18 +567,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ConcurrentWebServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-265">
-          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+        <state relative-caret-position="539">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ClientResponseManager.java">
+    <entry file="file://$PROJECT_DIR$/src/ConcurrentServerManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="113" column="19" selection-start-line="113" selection-start-column="19" selection-end-line="113" selection-end-column="19" />
+        <state relative-caret-position="646">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

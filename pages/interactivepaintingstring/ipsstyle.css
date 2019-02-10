@@ -1,0 +1,68 @@
+table {
+
+	width: 100%;
+	border-collapse: collapse;
+
+}
+
+tr, td {
+
+	border: solid;
+	text-align: center;
+	background-color: #E4FFB7;
+
+}
+
+tr:nth-child(even) td:nth-child(odd),
+tr:nth-child(odd) td:nth-child(even) {
+	background-color: #EFFFD2;
+}
+
+#redInput {
+
+	background-color: #F00;
+
+}
+
+#greenInput {
+
+	background-color: #0F0;
+
+}
+
+#blueInput {
+
+	background-color: #00F;
+
+}
+
+#submit {
+
+	width: 100%;
+
+}
+
+.feedback {
+
+	text-align: right;
+
+}
+
+#text {
+
+	float: left;
+
+}
+
+#colors {
+
+	width: 100%;
+
+}
+
+
+#resultCell {
+
+	background-color: white;
+
+}

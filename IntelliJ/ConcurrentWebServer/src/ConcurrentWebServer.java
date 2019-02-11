@@ -61,8 +61,6 @@ public class ConcurrentWebServer extends Thread {
                 //Read the client's request
                 String request = in.readLine();
 
-                System.out.println(request);
-
                 //Create a new object of type ClientResponseManager
                 ClientResponseManager pages = new ClientResponseManager(client.getOutputStream());
 

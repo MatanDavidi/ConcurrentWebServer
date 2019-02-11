@@ -73,6 +73,13 @@ public class ClientResponseManager {
 
     }
 
+    /**
+     * Writes the HTTP header to the output stream allowing to specify a certain response code and file type.
+     *
+     * @param response the response code to write to the output stream.
+     * @param fileType the type of the file to write to the output stream.
+     * @throws IOException in case there's an error while writing to the output streams.
+     */
     private void returnHttpHeader(String response, String fileType) throws IOException {
 
         if (!response.endsWith("\r\n")) {
@@ -122,6 +129,12 @@ public class ClientResponseManager {
 
     }
 
+    /**
+     * Gets the MIME file type based on the file's extension.
+     *
+     * @param lowerUrl a String containing the file to analyze
+     * @return a String containing the MIME file type e.g. text/html
+     */
     private String getFileType(String lowerUrl) {
 
         String re = "";

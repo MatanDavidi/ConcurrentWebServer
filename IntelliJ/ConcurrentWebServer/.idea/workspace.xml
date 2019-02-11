@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e79b94d2-5cb3-451e-a00b-7476d7869420" name="Default Changelist" comment="Fixed grammar mistake">
+    <list default="true" id="e79b94d2-5cb3-451e-a00b-7476d7869420" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClientResponseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClientResponseManager.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ClientResponseManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
+            <state relative-caret-position="377">
+              <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,7 +142,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549896703099" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549897308944" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -221,7 +220,35 @@
       <option name="project" value="LOCAL" />
       <updated>1549895856644</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fixed grammar mistake">
+      <created>1549896640628</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1549896640628</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Generalized httpHeader methods">
+      <created>1549896700510</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1549896700510</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added method getFileType that returns MIME file type based on extension">
+      <created>1549896771959</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1549896771959</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Changes generated automatically by IntelliJ">
+      <created>1549896796357</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1549896796357</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -279,7 +306,10 @@
     <MESSAGE value="Files generated automatically by IntelliJ" />
     <MESSAGE value="Removed useless input closing tags" />
     <MESSAGE value="Fixed grammar mistake" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed grammar mistake" />
+    <MESSAGE value="Generalized httpHeader methods" />
+    <MESSAGE value="Added method getFileType that returns MIME file type based on extension" />
+    <MESSAGE value="Changes generated automatically by IntelliJ" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes generated automatically by IntelliJ" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -542,8 +572,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ClientResponseManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
+        <state relative-caret-position="377">
+          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

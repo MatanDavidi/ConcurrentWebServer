@@ -1,80 +1,89 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Interactive Painting String</title>
-		<link rel="stylesheet" type="text/css" href="ipsstyle.css">
-		<script type="text/javascript" src="ipsscript.js"> </script>
-		<meta name="author" content="Matan Davidi">
-  		<meta name="keywords" content="Javascript, Colors, HTML">
-    	<meta name="date" content="16.01.2018">
-	</head>
-	<body>
-		<table>
-			<tbody>
-				<tr>
-					<th colspan="4">
-						Interactive Painting String
-				</th>
-			</tr>
-			<tr>
-				<td colspan="2">
-					<p class="feedback">Inserire del testo:</p>
-				</td>
-				<td colspan="2">
-					<input type="text" name="text" onchange="calculateColor()" id="text">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Rosso:
-				</td>
-				<td>
-					Verde:
-				</td>
-				<td>
-					Blu:
-				</td>
-				<td>
-					Risultato:
-				</td>
-			</tr>
-			<tr>
-				<td id="redInput" style="background-color: rgb(255, 0, 0);">
-					<input type="range" name="colorRange" id="red" min="0" max="255" value="255" onmousemove="calculateColor()"><br>
-					<input type="number" name="value" id="redValue" style="color: rgb(0, 0, 0);" value="255" onchange="changeRange(this.value, document.getElementById('red'))" min="0" max="255"></input>
-				</td>
-				<td id="greenInput" style="background-color: rgb(0, 255, 0);">
-					<input type="range" name="colorRange" id="green" min="0" max="255" value="255" onmousemove="calculateColor()"><br>
-					<input type="number" name="value" id="greenValue" style="color: rgb(0, 0, 0);" value="255" onchange="changeRange(this.value, document.getElementById('green'))" min="0" max="255"></input>
-				</td>
-				<td id="blueInput" style="background-color: rgb(0, 0, 255);">
-					<input type="range" name="colorRange" id="blue" min="0" max="255" value="255" onmousemove="calculateColor()"><br>
-					<input type="number" name="value" id="blueValue" style="color: rgb(0, 0, 0);" value="255" onchange="changeRange(this.value, document.getElementById('blue'))" min="0" max="255"></input>
-				</td>
-				<td id="resultCell">
-					<p id="uppercase"></p>
-					<p id="lowercase"></p>
-					<p id="colored" style="color: rgb(255, 255, 255);"></p>
-					<p id="colorRgb">rgb(255, 255, 255)</p>
-					<p id="colorHex">#FFFFFF</p>
-				</td></tr>
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <title>Interactive Painting String</title>
+    <link href="ipsstyle.css" rel="stylesheet" type="text/css">
+    <script src="ipsscript.js" type="text/javascript"></script>
+    <meta content="Matan Davidi" name="author">
+    <meta content="Javascript, Colors, HTML" name="keywords">
+    <meta content="16.01.2018" name="date">
+</head>
+<body>
+<table>
+    <tbody>
+    <tr>
+        <th colspan="4">
+            Interactive Painting String
+        </th>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <p class="feedback">Inserire del testo:</p>
+        </td>
+        <td colspan="2">
+            <input id="text" name="text" onchange="calculateColor()" type="text">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Rosso:
+        </td>
+        <td>
+            Verde:
+        </td>
+        <td>
+            Blu:
+        </td>
+        <td>
+            Risultato:
+        </td>
+    </tr>
+    <tr>
+        <td id="redInput" style="background-color: rgb(255, 0, 0);">
+            <input id="red" max="255" min="0" name="colorRange" onmousemove="calculateColor()" type="range" value="255"><br>
+            <input id="redValue" max="255" min="0" name="value"
+                   onchange="changeRange(this.value, document.getElementById('red'))"
+                   style="color: rgb(0, 0, 0);" type="number" value="255">
+        </td>
+        <td id="greenInput" style="background-color: rgb(0, 255, 0);">
+            <input id="green" max="255" min="0" name="colorRange" onmousemove="calculateColor()" type="range"
+                   value="255"><br>
+            <input id="greenValue" max="255" min="0" name="value"
+                   onchange="changeRange(this.value, document.getElementById('green'))"
+                   style="color: rgb(0, 0, 0);" type="number" value="255">
+        </td>
+        <td id="blueInput" style="background-color: rgb(0, 0, 255);">
+            <input id="blue" max="255" min="0" name="colorRange" onmousemove="calculateColor()" type="range"
+                   value="255"><br>
+            <input id="blueValue" max="255" min="0" name="value"
+                   onchange="changeRange(this.value, document.getElementById('blue'))"
+                   style="color: rgb(0, 0, 0);" type="number" value="255">
+        </td>
+        <td id="resultCell">
+            <p id="uppercase"></p>
+            <p id="lowercase"></p>
+            <p id="colored" style="color: rgb(255, 255, 255);"></p>
+            <p id="colorRgb">rgb(255, 255, 255)</p>
+            <p id="colorHex">#FFFFFF</p>
+        </td>
+    </tr>
 
-			</tbody>
-			<tfoot>
-				<tr>
-					<td colspan="4">
-						<input type="submit" name="submit" id="submit" onclick="calculateColor()">
-					</td>
-				</tr>
-			</tfoot>
-		</table>
-		<p>
-			<a href="../index.html">Go back to the index?</a>
-			<a href="../gnr.html">Go back to the jungle?</a>
-		  </p>
-		
-		  <img src="../img/fortress.jpg" alt="Fortress">
-		  <img src="../img/waterfall.jpg" alt="Waterfall">
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="4">
+            <input id="submit" name="submit" onclick="calculateColor()" type="submit">
+        </td>
+    </tr>
+    </tfoot>
+</table>
+<p>
+    <a href="../index.html">Go back to the index?</a>
+    <a href="../gnr.html">Go back to the jungle?</a>
+</p>
+
+<img alt="Fortress" src="../img/fortress.jpg">
+<img alt="Waterfall" src="../img/waterfall.jpg">
 </body>
 </html>

@@ -108,7 +108,7 @@ public class ClientResponseManager {
         if (Files.exists(url) && !Files.notExists(url)) {
 
             //Write a different file type depending on the file's extension
-            String lowerUrl = url.toString().toLowerCase();
+            String lowerUrl = url.toString().trim().toLowerCase();
             String fileType = getFileType(lowerUrl);
 
             //Write the HTTP header e.g. HTTP/1.1 200 OK

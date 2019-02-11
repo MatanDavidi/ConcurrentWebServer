@@ -87,7 +87,6 @@ public class ClientResponseManager {
         out.write(("Content-Type: " + fileType).getBytes());
         out.write("\r\n".getBytes());
 
-
     }
 
     /**
@@ -103,23 +102,8 @@ public class ClientResponseManager {
 
             //Write a different file type depending on the file's extension
             String lowerUrl = url.toString().toLowerCase();
-            if (lowerUrl.endsWith(".html")) {
-
-                returnHttpHeader("text/html");
-
-            } else if (lowerUrl.endsWith(".css")) {
-
-                returnHttpHeader("text/css");
-
-            } else if (lowerUrl.endsWith(".js")) {
-
-                returnHttpHeader("application/javascript");
-
-            } else {
-
-                returnHttpHeader();
-
-            }
+            String fileType = getFileType(lowerUrl);
+            returnHttpHeader(fileType);
 
             //Read the file's data
             byte[] fileContent = Files.readAllBytes(url);
@@ -133,6 +117,40 @@ public class ClientResponseManager {
             throw new FileNotFoundException("Unable to find file " + url.toString());
 
         }
+
+    }
+
+    private String getFileType(String lowerUrl) {
+
+        String re = "";
+
+        if (lowerUrl.endsWith(".html")) {
+
+            re = "text/html";
+
+        } else if (lowerUrl.endsWith(".css")) {
+
+            re = "text/css";
+
+        } else if (lowerUrl.endsWith(".js")) {
+
+            re = "application/javascript";
+
+        } else if (lowerUrl.endsWith(".jpg") || lowerUrl.endsWith(".jpeg")) {
+
+            re = "image/jpeg";
+
+        } else if (lowerUrl.endsWith(".png")) {
+
+            re = "image/png";
+
+        } else if (lowerUrl.endsWith(".bmp")) {
+
+            re = "image/bmp";
+
+        }
+
+        return re;
 
     }
 

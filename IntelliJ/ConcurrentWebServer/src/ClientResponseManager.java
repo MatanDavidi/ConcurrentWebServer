@@ -55,8 +55,7 @@ public class ClientResponseManager {
      */
     private void returnHttpHeader() throws IOException {
 
-        out.write("HTTP/1.1 200 OK\r\n".getBytes());
-        out.write("\r\n".getBytes());
+        returnHttpHeader("HTTP/1.1 200 OK\r\n", "");
 
 
     }
@@ -69,8 +68,23 @@ public class ClientResponseManager {
      */
     private void returnHttpHeader(String fileType) throws IOException {
 
-        out.write("HTTP/1.1 200 OK\r\n".getBytes());
-        out.write((fileType + "\r\n").getBytes());
+        returnHttpHeader("HTTP/1.1 200 OK", fileType);
+
+
+    }
+
+    private void returnHttpHeader(String response, String fileType) throws IOException {
+
+        if (!response.endsWith("\r\n")) {
+            response += "\r\n";
+        }
+
+        if (!fileType.equals("") && !fileType.endsWith("\r\n")) {
+            fileType += "\r\n";
+        }
+
+        out.write(response.getBytes());
+        out.write(("Content-Type: " + fileType).getBytes());
         out.write("\r\n".getBytes());
 
 

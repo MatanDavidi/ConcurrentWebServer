@@ -16,7 +16,7 @@ public class ClientResponseManager {
     private OutputStream out;
 
     /**
-     * Istantiates new objects of type ClientResponseManager.
+     * Instantiates new objects of type ClientResponseManager.
      *
      * @param out the output stream to write to.
      */

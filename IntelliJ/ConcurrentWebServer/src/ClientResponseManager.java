@@ -137,6 +137,7 @@ public class ClientResponseManager {
 
     /**
      * Gets the MIME file type based on the file's extension.
+     * MIME types taken directly from https://www.freeformatter.com/mime-types-list.html
      *
      * @param lowerUrl a String containing the file to analyze
      * @return a String containing the MIME file type e.g. text/html

@@ -68,13 +68,13 @@ public class ConcurrentWebServer extends Thread {
 
                 //Get the client's input and output streams
                 BufferedReader in = new BufferedReader(new InputStreamReader(client.getInputStream()));
-                BufferedWriter out = new BufferedWriter(new OutputStreamWriter(client.getOutputStream()));
+                OutputStream out = client.getOutputStream();
 
                 //Read the client's request
                 String request = in.readLine();
 
                 //Create a new object of type ClientResponseManager
-                ClientResponseManager pages = new ClientResponseManager(client.getOutputStream());
+                ClientResponseManager pages = new ClientResponseManager(out);
 
                 //If the request exists, meaning that the client actually sent something and is valid
                 if (request != null && request.length() > 0 && request.startsWith("GET") && request.endsWith("HTTP/1.1")) {

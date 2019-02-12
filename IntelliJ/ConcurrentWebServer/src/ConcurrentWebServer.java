@@ -73,7 +73,7 @@ public class ConcurrentWebServer extends Thread {
                     try {
 
                         //If the requested resource is empty, change it to index.html
-                        if (requestPath.toString().equalsIgnoreCase("")) {
+                        if (requestPath.toString().equals("")) {
 
                             requestPath = Paths.get("index.html");
 

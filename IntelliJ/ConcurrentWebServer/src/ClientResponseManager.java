@@ -82,16 +82,22 @@ public class ClientResponseManager {
      */
     private void returnHttpHeader(String response, String fileType) throws IOException {
 
-        if (!response.endsWith("\r\n")) {
+        if (response.length() > 0 && !response.endsWith("\r\n")) {
             response += "\r\n";
         }
 
-        if (!fileType.equals("") && !fileType.endsWith("\r\n")) {
+        if (fileType.length() > 0 && !fileType.endsWith("\r\n")) {
             fileType += "\r\n";
         }
 
         out.write(response.getBytes());
-        out.write(("Content-Type: " + fileType).getBytes());
+
+        if (fileType.length() > 0) {
+
+            out.write(("Content-Type: " + fileType).getBytes());
+
+        }
+
         out.write("\r\n".getBytes());
 
     }

@@ -98,7 +98,7 @@ public class ConcurrentWebServer extends Thread {
                     } catch (FileNotFoundException fnfe) {
 
                         //Print a 404 error page
-                        pages.return404ErrorPage(/*Paths.get(htdocsFolder.toString(), requestPath.toString()).toString()*/);
+                        pages.return404ErrorPage();
 
                     }
 

@@ -15,9 +15,14 @@ public class ConcurrentWebServer extends Thread {
     private Socket client;
 
     /**
-     * The folder in which the server has to look for html files to offer
+     * The folder in which the server has to look for html files to offer e.g. www
      */
     private Path htdocsFolder;
+
+    /**
+     * The name of the file to open by default when no file is specified e.g. index.html
+     */
+    private String defaultFile;
 
     /**
      * Instantiates new objects of type ConcurrentWebServer with a default value for the field htdocsFolder
@@ -26,7 +31,7 @@ public class ConcurrentWebServer extends Thread {
      */
     public ConcurrentWebServer(Socket client) {
 
-        this(client, Paths.get("pages"));
+        this(client, Paths.get("pages"), "index.html");
 
     }
 
@@ -39,6 +44,13 @@ public class ConcurrentWebServer extends Thread {
      */
     public ConcurrentWebServer(Socket client, Path htdocsFolder) {
 
+        this(client, htdocsFolder, "index.html");
+
+    }
+
+    public ConcurrentWebServer(Socket client, Path htdocsFolder, String defaultFile) {
+
+        this.defaultFile = defaultFile;
         this.client = client;
         this.htdocsFolder = htdocsFolder;
 
@@ -75,7 +87,7 @@ public class ConcurrentWebServer extends Thread {
                         //If the requested resource is empty, change it to index.html
                         if (requestPath.toString().equals("")) {
 
-                            requestPath = Paths.get("index.html");
+                            requestPath = Paths.get(defaultFile);
 
                         }
 

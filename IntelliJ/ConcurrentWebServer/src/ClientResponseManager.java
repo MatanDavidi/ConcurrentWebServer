@@ -139,7 +139,7 @@ public class ClientResponseManager {
 
         String re = "";
 
-        if (lowerUrl.endsWith(".html")) {
+        if (lowerUrl.endsWith(".htm") || lowerUrl.endsWith(".html")) {
 
             re = "text/html";
 

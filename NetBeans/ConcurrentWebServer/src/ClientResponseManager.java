@@ -82,16 +82,22 @@ public class ClientResponseManager {
      */
     private void returnHttpHeader(String response, String fileType) throws IOException {
 
-        if (!response.endsWith("\r\n")) {
+        if (response.length() > 0 && !response.endsWith("\r\n")) {
             response += "\r\n";
         }
 
-        if (!fileType.equals("") && !fileType.endsWith("\r\n")) {
+        if (fileType.length() > 0 && !fileType.endsWith("\r\n")) {
             fileType += "\r\n";
         }
 
         out.write(response.getBytes());
-        out.write(("Content-Type: " + fileType).getBytes());
+
+        if (fileType.length() > 0) {
+
+            out.write(("Content-Type: " + fileType).getBytes());
+
+        }
+
         out.write("\r\n".getBytes());
 
     }
@@ -131,6 +137,7 @@ public class ClientResponseManager {
 
     /**
      * Gets the MIME file type based on the file's extension.
+     * MIME types taken directly from https://www.freeformatter.com/mime-types-list.html
      *
      * @param lowerUrl a String containing the file to analyze
      * @return a String containing the MIME file type e.g. text/html
@@ -139,7 +146,7 @@ public class ClientResponseManager {
 
         String re = "";
 
-        if (lowerUrl.endsWith(".html")) {
+        if (lowerUrl.endsWith(".htm") || lowerUrl.endsWith(".html")) {
 
             re = "text/html";
 
@@ -162,6 +169,10 @@ public class ClientResponseManager {
         } else if (lowerUrl.endsWith(".bmp")) {
 
             re = "image/bmp";
+
+        } else if (lowerUrl.endsWith(".ico")) {
+
+            re = "image/x-icon";
 
         }
 

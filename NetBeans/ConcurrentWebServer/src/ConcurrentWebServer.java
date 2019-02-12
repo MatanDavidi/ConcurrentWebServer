@@ -15,9 +15,14 @@ public class ConcurrentWebServer extends Thread {
     private Socket client;
 
     /**
-     * The folder in which the server has to look for html files to offer
+     * The folder in which the server has to look for html files to offer e.g. www
      */
     private Path htdocsFolder;
+
+    /**
+     * The name of the file to open by default when no file is specified e.g. index.html
+     */
+    private String defaultFile;
 
     /**
      * Instantiates new objects of type ConcurrentWebServer with a default value for the field htdocsFolder
@@ -26,7 +31,7 @@ public class ConcurrentWebServer extends Thread {
      */
     public ConcurrentWebServer(Socket client) {
 
-        this(client, Paths.get("pages"));
+        this(client, Paths.get("pages"), "index.html");
 
     }
 
@@ -39,6 +44,13 @@ public class ConcurrentWebServer extends Thread {
      */
     public ConcurrentWebServer(Socket client, Path htdocsFolder) {
 
+        this(client, htdocsFolder, "index.html");
+
+    }
+
+    public ConcurrentWebServer(Socket client, Path htdocsFolder, String defaultFile) {
+
+        this.defaultFile = defaultFile;
         this.client = client;
         this.htdocsFolder = htdocsFolder;
 
@@ -56,13 +68,13 @@ public class ConcurrentWebServer extends Thread {
 
                 //Get the client's input and output streams
                 BufferedReader in = new BufferedReader(new InputStreamReader(client.getInputStream()));
-                BufferedWriter out = new BufferedWriter(new OutputStreamWriter(client.getOutputStream()));
+                OutputStream out = client.getOutputStream();
 
                 //Read the client's request
                 String request = in.readLine();
 
                 //Create a new object of type ClientResponseManager
-                ClientResponseManager pages = new ClientResponseManager(client.getOutputStream());
+                ClientResponseManager pages = new ClientResponseManager(out);
 
                 //If the request exists, meaning that the client actually sent something and is valid
                 if (request != null && request.length() > 0 && request.startsWith("GET") && request.endsWith("HTTP/1.1")) {
@@ -73,9 +85,9 @@ public class ConcurrentWebServer extends Thread {
                     try {
 
                         //If the requested resource is empty, change it to index.html
-                        if (requestPath.toString().equalsIgnoreCase("")) {
+                        if (requestPath.toString().equals("")) {
 
-                            requestPath = Paths.get("index.html");
+                            requestPath = Paths.get(defaultFile);
 
                         }
 
@@ -86,7 +98,7 @@ public class ConcurrentWebServer extends Thread {
                     } catch (FileNotFoundException fnfe) {
 
                         //Print a 404 error page
-                        pages.return404ErrorPage(/*Paths.get(htdocsFolder.toString(), requestPath.toString()).toString()*/);
+                        pages.return404ErrorPage();
 
                     }
 

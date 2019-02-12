@@ -170,6 +170,10 @@ public class ClientResponseManager {
 
             re = "image/bmp";
 
+        } else if (lowerUrl.endsWith(".ico")) {
+
+            re = "image/x-icon";
+
         }
 
         return re;
